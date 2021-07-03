@@ -5,10 +5,10 @@
         <description>git - Tag - Sakthivel B</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 May 2020 12:51:23 &#43;0530</lastBuildDate><atom:link href="https://imshakthi.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>Git - Validate commit message - git hooks</title>
-    <link>https://imshakthi.github.io/posts/git-hooks/</link>
+    <link>https://imshakthi.github.io/posts/0002-git-hooks/</link>
     <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://imshakthi.github.io/posts/git-hooks/</guid>
+    <guid>https://imshakthi.github.io/posts/0002-git-hooks/</guid>
     <description><![CDATA[To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using git-hooks, where the commit message is formatted with the help of commit-msg hook. commit-msg hook will be trigger on each commit.
 First go to git repo which needs the validator, then create commit-msg hook file in .git/hooks folder
 1 2 3  cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg   Modify permission to make the hook executable]]></description>

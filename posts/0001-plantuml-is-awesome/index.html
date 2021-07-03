@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Plantuml Is Awesome - Sakthivel B</title><meta name="Description" content="A developer&#39;s dairy!"><meta property="og:title" content="Plantuml Is Awesome" />
+<meta property="og:description" content="This post is all about why I felt PlantUML is awesome.
+PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language.
+You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-08-03T12:51:23+05:30" />
+<meta property="article:modified_time" content="2019-08-03T12:51:23+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Plantuml Is Awesome"/>
+<meta name="twitter:description" content="This post is all about why I felt PlantUML is awesome.
+PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language.
+You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective."/>
+<meta name="application-name" content="Sakthivel B">
+<meta name="apple-mobile-web-app-title" content="Sakthivel B"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/" /><link rel="next" href="https://imshakthi.github.io/posts/0002-git-hooks/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Plantuml Is Awesome",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/imshakthi.github.io\/posts\/0001-plantuml-is-awesome\/"
+        },"genre": "posts","keywords": "uml, devtools","wordcount":  572 ,
+        "url": "https:\/\/imshakthi.github.io\/posts\/0001-plantuml-is-awesome\/","datePublished": "2019-08-03T12:51:23+05:30","dateModified": "2019-08-03T12:51:23+05:30","publisher": {
+            "@type": "Organization",
+            "name": "imshakthi"},"author": {
+                "@type": "Person",
+                "name": "sakthivel"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sakthivel B"><span class="header-title-pre">❯</span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/">❯  Posts </a><a class="menu-item" href="/categories/">❯  Categories </a><a class="menu-item" href="/tags/">❯  Tags </a><a class="menu-item" href="/about">❯  About </a><a class="menu-item" href="https://github.com/imshakthi/" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sakthivel B"><span class="header-title-pre">❯</span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">❯ Posts</a><a class="menu-item" href="/categories/" title="">❯ Categories</a><a class="menu-item" href="/tags/" title="">❯ Tags</a><a class="menu-item" href="/about" title="">❯ About</a><a class="menu-item" href="https://github.com/imshakthi/" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Plantuml Is Awesome</h1><h2 class="single-subtitle">PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language.</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>sakthivel</a></span>&nbsp;<span class="post-category">included in <a href="/categories/design/"><i class="far fa-folder fa-fw"></i>design</a>&nbsp;<a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>dev</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="03-08-2019">03-08-2019</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;572 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#sample-sequence-diagram">Sample Sequence diagram</a></li>
+    <li><a href="#sequence-diagram-with-plantuml">Sequence diagram with PlantUML</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>This post is all about why I felt PlantUML is awesome.</p>
+<p><a href="https://github.com/plantuml/plantuml" target="_blank" rel="noopener noreffer">PlantUML</a> is an open-source tool allowing users to create UML diagrams from a plain text language.</p>
+<p>You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.</p>
+<p>I have used similar tools in past, like <a href="https://github.com/knsv/mermaid" target="_blank" rel="noopener noreffer">mermaid</a> and <a href="https://graphviz.org/" target="_blank" rel="noopener noreffer">graphviz</a>.</p>
+<p>Following are the things that made PlantUML different</p>
+<ul>
+<li>Readability</li>
+<li>Maintainable</li>
+<li>Flexible</li>
+<li>Powerful</li>
+<li>Customable</li>
+</ul>
+<p>Once the UML is designed with plantUML the end result can be extracted out into PNG or SVG. There are plugins that can be easily intergated into IDE&rsquo;s, such as <a href="https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml" target="_blank" rel="noopener noreffer">PlantUML for VS Code</a> and <a href="https://plugins.jetbrains.com/plugin/7017-plantuml-integration" target="_blank" rel="noopener noreffer">PlantUML for IntelliJ</a>.</p>
+<p>Also available for <a href="https://www.atlassian.com/software/confluence" target="_blank" rel="noopener noreffer">Confluence</a>(document manager of Atlassian suite) where the history of the change in design implementation can be tracked easily <a href="https://marketplace.atlassian.com/apps/41025/plantuml-for-confluence?hosting=server&amp;tab=overview" target="_blank" rel="noopener noreffer">PlantUML for Confluence</a></p>
+<p><em>PS: PlantUML is written is java with graphviz underhood :)</em></p>
+<p>PlantUML is a component that allows to quickly write :</p>
+<ol>
+<li>Sequence diagram</li>
+<li>Usecase diagram</li>
+</ol>
+<ul>
+<li>Class diagram</li>
+<li>Activity diagram (here is the legacy syntax)</li>
+<li>Component diagram</li>
+<li>State diagram</li>
+<li>Object diagram</li>
+<li>Deployment diagram <code>beta</code></li>
+<li>Timing diagram <code>beta</code></li>
+</ul>
+<p>You can find the details <a href="http://plantuml.com/" target="_blank" rel="noopener noreffer">documentation</a> of how and what is plantUML.</p>
+<p>Here I took a random sequence diagram from internet and tried to replicate the same in PlantUML with few tweeks, the end result was wow!</p>
+<h2 id="sample-sequence-diagram">Sample Sequence diagram</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/PqvRnKNP/sequence-example-facebook-authentication.png"
+        data-srcset="https://i.postimg.cc/PqvRnKNP/sequence-example-facebook-authentication.png, https://i.postimg.cc/PqvRnKNP/sequence-example-facebook-authentication.png 1.5x, https://i.postimg.cc/PqvRnKNP/sequence-example-facebook-authentication.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/PqvRnKNP/sequence-example-facebook-authentication.png"
+        title="sample sequnce" /></p>
+<h2 id="sequence-diagram-with-plantuml">Sequence diagram with PlantUML</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/4NtvGM1C/facebook.png"
+        data-srcset="https://i.postimg.cc/4NtvGM1C/facebook.png, https://i.postimg.cc/4NtvGM1C/facebook.png 1.5x, https://i.postimg.cc/4NtvGM1C/facebook.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/4NtvGM1C/facebook.png"
+        title="PlantUML sequnce" /></p>
+<p>It&rsquo;s not just a replica, but a much better one.</p>
+<p>Here the code that did the <code>magic</code> for us.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@startuml
+header Facebook Authentication System
+title Facebook Authentication System
+footer Page no %page% of %lastpage%
+
+actor user #3c5a99
+participant WebBrowser as &#34;Web Browser&#34;
+box &#34;Facebook server&#34;
+    participant App as &#34;Application&#34;
+    participant AuthZ as &#34;Authorization System&#34;
+    database FCS as &#34;Facebook Content System&#34;
+end box
+
+== Basic flow ==
+
+activate user
+user -&gt; WebBrowser : get FB resource
+    activate WebBrowser
+        WebBrowser -&gt; App : request FB access
+        WebBrowser &lt;-- App : &lt;&lt;http redirect&gt;&gt;
+        WebBrowser -[#red]&gt; AuthZ : authorize
+        WebBrowser &lt;-- AuthZ : permission form
+        user &lt;-- WebBrowser : permission form
+    deactivate WebBrowser
+
+    user -&gt; WebBrowser : user permission
+    activate WebBrowser
+        WebBrowser -&gt; AuthZ : process permission
+        ... 5 minutes alter ...
+        WebBrowser &lt;-- AuthZ : &lt;&lt;http redirect&gt;&gt;
+
+        == Authorization ==
+        alt permission granted
+            activate App
+                group
+                WebBrowser -&gt; App : FB authorization code
+                        activate AuthZ
+                            App -&gt;  AuthZ : FB authorization code
+                            App &lt;--  AuthZ : FB authorization code
+                        deactivate AuthZ
+
+                        activate FCS
+                            App -&gt; FCS : access FB user protected resource
+                            App &lt;-- FCS : user protected resource
+                            note left FCS: Check with content system
+                        deactivate FCS
+                 end
+            deactivate App
+
+            WebBrowser &lt;-- App : user protected resource
+            deactivate WebBrowser
+
+            user &lt;-- WebBrowser  : user protected resource
+        else permission not granted
+            activate WebBrowser
+                activate App
+                    WebBrowser -&gt; App : no authorization
+                    WebBrowser &lt;-- App : FB resource not available
+                deactivate App
+            deactivate WebBrowser
+
+            user &lt;-- WebBrowser  : FB resource not available
+        end
+    deactivate WebBrowser
+
+deactivate user
+@enduml
+</code></pre></td></tr></table>
+</div>
+</div><p>Thanks for reading!!!
+:)</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 03-08-2019</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/" data-title="Plantuml Is Awesome" data-via="im_shakthi" data-hashtags="uml,devtools"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/" data-hashtag="uml"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://imshakthi.github.io/posts/0001-plantuml-is-awesome/" data-title="Plantuml Is Awesome" data-web><i class="fab fa-whatsapp fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/uml/">uml</a>,&nbsp;<a href="/tags/devtools/">devtools</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/0002-git-hooks/" class="next" rel="next" title="Git - Validate commit message - git hooks">Git - Validate commit message - git hooks<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="https://imshakthi.disqus.com/embed.js" defer></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"I'm Shakthi","id-2":"I'm Shakthi"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
