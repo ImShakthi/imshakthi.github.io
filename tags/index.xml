@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - Sakthivel</title>
+        <link>http://example.org/tags/</link>
+        <description>Tags - Tag - Sakthivel</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 May 2020 12:51:23 &#43;0530</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>git</title>
+    <link>http://example.org/tags/git/</link>
+    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/tags/git/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>githooks</title>
+    <link>http://example.org/tags/githooks/</link>
+    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/tags/githooks/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>tricks</title>
+    <link>http://example.org/tags/tricks/</link>
+    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/tags/tricks/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>devtools</title>
+    <link>http://example.org/tags/devtools/</link>
+    <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/tags/devtools/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>uml</title>
+    <link>http://example.org/tags/uml/</link>
+    <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/tags/uml/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
