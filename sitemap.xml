@@ -2,17 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/categories/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/categories/dev/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/git/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/categories/git/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/posts/git-hooks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/githooks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/tricks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/categories/design/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/devtools/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/posts/plantuml-is-awesome/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
-            <loc>http://example.org/tags/uml/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url></urlset>
+            <loc>https://imshakthi.github.io/categories/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/categories/dev/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/git/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/categories/git/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/posts/git-hooks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/githooks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/posts/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/tricks/</loc><lastmod>2020-05-14T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/categories/design/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/devtools/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/posts/plantuml-is-awesome/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/tags/uml/</loc><lastmod>2019-08-03T12:51:23&#43;05:30</lastmod></url><url>
+            <loc>https://imshakthi.github.io/about/</loc></url></urlset>
