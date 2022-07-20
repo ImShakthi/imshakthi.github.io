@@ -11,7 +11,7 @@
     <guid>https://imshakthi.github.io/posts/0002-git-hooks/</guid>
     <description><![CDATA[To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using git-hooks, where the commit message is formatted with the help of commit-msg hook. commit-msg hook will be trigger on each commit.
 First go to git repo which needs the validator, then create commit-msg hook file in .git/hooks folder
-1 2 3  cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg   Modify permission to make the hook executable]]></description>
+1 2 3 cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg Modify permission to make the hook executable]]></description>
 </item><item>
     <title>Plantuml Is Awesome</title>
     <link>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</link>

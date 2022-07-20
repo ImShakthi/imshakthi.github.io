@@ -8,7 +8,7 @@
         <title>Git - Validate commit message - git hooks - Sakthivel B</title><meta name="Description" content="A developer&#39;s dairy!"><meta property="og:title" content="Git - Validate commit message - git hooks" />
 <meta property="og:description" content="To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using git-hooks, where the commit message is formatted with the help of commit-msg hook. commit-msg hook will be trigger on each commit.
 First go to git repo which needs the validator, then create commit-msg hook file in .git/hooks folder
-1 2 3  cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg   Modify permission to make the hook executable" />
+1 2 3 cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg Modify permission to make the hook executable" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://imshakthi.github.io/posts/0002-git-hooks/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-05-14T12:51:23+05:30" />
@@ -18,7 +18,7 @@ First go to git repo which needs the validator, then create commit-msg hook file
 <meta name="twitter:title" content="Git - Validate commit message - git hooks"/>
 <meta name="twitter:description" content="To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using git-hooks, where the commit message is formatted with the help of commit-msg hook. commit-msg hook will be trigger on each commit.
 First go to git repo which needs the validator, then create commit-msg hook file in .git/hooks folder
-1 2 3  cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg   Modify permission to make the hook executable"/>
+1 2 3 cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg Modify permission to make the hook executable"/>
 <meta name="application-name" content="Sakthivel B">
 <meta name="apple-mobile-web-app-title" content="Sakthivel B"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -106,10 +106,10 @@ First go to git repo which needs the validator, then create commit-msg hook file
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
-
-touch .git/hooks/commit-msg
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">touch .git/hooks/commit-msg
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Modify permission to make the hook executable</p>
 <div class="highlight"><div class="chroma">
@@ -117,8 +117,8 @@ touch .git/hooks/commit-msg
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chmod +x .git/hooks/commit-msg
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x .git/hooks/commit-msg
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Open <code>commit-msg</code> file in a editor and add the following lines of script.</p>
 <div class="highlight"><div class="chroma">
@@ -134,16 +134,16 @@ touch .git/hooks/commit-msg
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="ch">#!/usr/bin/env ruby</span>
-<span class="n">message_file</span> <span class="o">=</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
-<span class="n">message</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">message_file</span><span class="p">)</span>
-<span class="vg">$regex</span> <span class="o">=</span> <span class="sr">/((\w):\s(\w))/i</span> 
-<span class="k">if</span> <span class="o">!</span><span class="vg">$regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> 
-  <span class="nb">puts</span> <span class="s2">&#34;[POLICY] Your message is not formatted correctly&#34;</span> 
-  <span class="nb">puts</span> <span class="s2">&#34;[STANDARD] Your message should be in the format: ‘committer_name: commit message’&#34;</span> 
-  <span class="nb">exit</span> <span class="mi">1</span>
-<span class="k">end</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env ruby</span>
+</span></span><span class="line"><span class="cl"><span class="n">message_file</span> <span class="o">=</span> <span class="no">ARGV</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">message</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">message_file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="vg">$regex</span> <span class="o">=</span> <span class="sr">/((\w):\s(\w))/i</span> 
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">!</span><span class="vg">$regex</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">  <span class="nb">puts</span> <span class="s2">&#34;[POLICY] Your message is not formatted correctly&#34;</span> 
+</span></span><span class="line"><span class="cl">  <span class="nb">puts</span> <span class="s2">&#34;[STANDARD] Your message should be in the format: ‘committer_name: commit message’&#34;</span> 
+</span></span><span class="line"><span class="cl">  <span class="nb">exit</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="create-hook-installer">Create hook installer</h3>
 <p>A simple hook installer can be created as follows, here I have used quite a complex pattern.</p>
@@ -160,14 +160,14 @@ touch .git/hooks/commit-msg
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
-
-wget https://raw.githubusercontent.com/ImShakthi/hackrator/master/git-hooks/commit-msg-validator.sh
-
-chmod +x commit-msg-validator.sh
-
-sh commit-msg-validator.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wget https://raw.githubusercontent.com/ImShakthi/hackrator/master/git-hooks/commit-msg-validator.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">chmod +x commit-msg-validator.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sh commit-msg-validator.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Hola, commit message validator would be installed successfully.</p>
 </div><div class="post-footer" id="post-footer">

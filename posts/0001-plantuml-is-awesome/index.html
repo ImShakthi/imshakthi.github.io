@@ -31,7 +31,7 @@ You can just write few lines of code to draw your UML diagram. UML diagrams are 
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/imshakthi.github.io\/posts\/0001-plantuml-is-awesome\/"
-        },"genre": "posts","keywords": "uml, devtools","wordcount":  588 ,
+        },"genre": "posts","keywords": "uml, devtools","wordcount":  581 ,
         "url": "https:\/\/imshakthi.github.io\/posts\/0001-plantuml-is-awesome\/","datePublished": "2019-08-03T12:51:23+05:30","dateModified": "2019-08-03T12:51:23+05:30","publisher": {
             "@type": "Organization",
             "name": "imshakthi"},"author": {
@@ -81,7 +81,7 @@ You can just write few lines of code to draw your UML diagram. UML diagrams are 
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Plantuml Is Awesome</h1><h2 class="single-subtitle">PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language.</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>sakthivel</a></span>&nbsp;<span class="post-category">included in <a href="/categories/design/"><i class="far fa-folder fa-fw"></i>design</a>&nbsp;<a href="/categories/dev/"><i class="far fa-folder fa-fw"></i>dev</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="03-08-2019">03-08-2019</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;588 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="03-08-2019">03-08-2019</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;581 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -222,74 +222,74 @@ You can just write few lines of code to draw your UML diagram. UML diagrams are 
 </span><span class="lnt">67
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">@startuml
-header Facebook Authentication System
-title Facebook Authentication System
-footer Page no %page% of %lastpage%
-
-actor user #3c5a99
-participant WebBrowser as &#34;Web Browser&#34;
-box &#34;Facebook server&#34;
-    participant App as &#34;Application&#34;
-    participant AuthZ as &#34;Authorization System&#34;
-    database FCS as &#34;Facebook Content System&#34;
-end box
-
-== Basic flow ==
-
-activate user
-user -&gt; WebBrowser : get FB resource
-    activate WebBrowser
-        WebBrowser -&gt; App : request FB access
-        WebBrowser &lt;-- App : &lt;&lt;http redirect&gt;&gt;
-        WebBrowser -[#red]&gt; AuthZ : authorize
-        WebBrowser &lt;-- AuthZ : permission form
-        user &lt;-- WebBrowser : permission form
-    deactivate WebBrowser
-
-    user -&gt; WebBrowser : user permission
-    activate WebBrowser
-        WebBrowser -&gt; AuthZ : process permission
-        ... 5 minutes alter ...
-        WebBrowser &lt;-- AuthZ : &lt;&lt;http redirect&gt;&gt;
-
-        == Authorization ==
-        alt permission granted
-            activate App
-                group
-                WebBrowser -&gt; App : FB authorization code
-                        activate AuthZ
-                            App -&gt;  AuthZ : FB authorization code
-                            App &lt;--  AuthZ : FB authorization code
-                        deactivate AuthZ
-
-                        activate FCS
-                            App -&gt; FCS : access FB user protected resource
-                            App &lt;-- FCS : user protected resource
-                            note left FCS: Check with content system
-                        deactivate FCS
-                 end
-            deactivate App
-
-            WebBrowser &lt;-- App : user protected resource
-            deactivate WebBrowser
-
-            user &lt;-- WebBrowser  : user protected resource
-        else permission not granted
-            activate WebBrowser
-                activate App
-                    WebBrowser -&gt; App : no authorization
-                    WebBrowser &lt;-- App : FB resource not available
-                deactivate App
-            deactivate WebBrowser
-
-            user &lt;-- WebBrowser  : FB resource not available
-        end
-    deactivate WebBrowser
-
-deactivate user
-@enduml
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="err">@</span><span class="n">startuml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">header</span><span class="w"> </span><span class="n">Facebook</span><span class="w"> </span><span class="n">Authentication</span><span class="w"> </span><span class="n">System</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">title</span><span class="w"> </span><span class="n">Facebook</span><span class="w"> </span><span class="n">Authentication</span><span class="w"> </span><span class="n">System</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">footer</span><span class="w"> </span><span class="n">Page</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="o">%</span><span class="n">page</span><span class="o">%</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="o">%</span><span class="n">lastpage</span><span class="o">%</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">actor</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="err">#3</span><span class="n">c5a99</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">participant</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Web</span><span class="w"> </span><span class="n">Browser</span><span class="err">&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">box</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Facebook</span><span class="w"> </span><span class="n">server</span><span class="err">&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">participant</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Application</span><span class="err">&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">participant</span><span class="w"> </span><span class="n">AuthZ</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Authorization</span><span class="w"> </span><span class="n">System</span><span class="err">&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">database</span><span class="w"> </span><span class="n">FCS</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Facebook</span><span class="w"> </span><span class="n">Content</span><span class="w"> </span><span class="n">System</span><span class="err">&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">end</span><span class="w"> </span><span class="n">box</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">==</span><span class="w"> </span><span class="n">Basic</span><span class="w"> </span><span class="n">flow</span><span class="w"> </span><span class="o">==</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">activate</span><span class="w"> </span><span class="n">user</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">user</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">get</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">resource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">activate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">request</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">access</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="n">http</span><span class="w"> </span><span class="n">redirect</span><span class="o">&gt;&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">-</span><span class="p">[</span><span class="nv">#red</span><span class="p">]</span><span class="o">&gt;</span><span class="w"> </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">authorize</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kd">permission</span><span class="w"> </span><span class="n">form</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">user</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kd">permission</span><span class="w"> </span><span class="n">form</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">deactivate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">user</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="kd">permission</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">activate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">process</span><span class="w"> </span><span class="kd">permission</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">...</span><span class="w"> </span><span class="err">5</span><span class="w"> </span><span class="n">minutes</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="p">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="n">http</span><span class="w"> </span><span class="n">redirect</span><span class="o">&gt;&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">==</span><span class="w"> </span><span class="n">Authorization</span><span class="w"> </span><span class="o">==</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">alt</span><span class="w"> </span><span class="kd">permission</span><span class="w"> </span><span class="n">granted</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">activate</span><span class="w"> </span><span class="n">App</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">group</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">authorization</span><span class="w"> </span><span class="n">code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="n">activate</span><span class="w"> </span><span class="n">AuthZ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                            </span><span class="n">App</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">  </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">authorization</span><span class="w"> </span><span class="n">code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                            </span><span class="n">App</span><span class="w"> </span><span class="o">&lt;--</span><span class="w">  </span><span class="n">AuthZ</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">authorization</span><span class="w"> </span><span class="n">code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="n">deactivate</span><span class="w"> </span><span class="n">AuthZ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="n">activate</span><span class="w"> </span><span class="n">FCS</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                            </span><span class="n">App</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">FCS</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">protected</span><span class="w"> </span><span class="n">resource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                            </span><span class="n">App</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">FCS</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">protected</span><span class="w"> </span><span class="n">resource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                            </span><span class="n">note</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="n">FCS</span><span class="o">:</span><span class="w"> </span><span class="n">Check</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="n">system</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="n">deactivate</span><span class="w"> </span><span class="n">FCS</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                 </span><span class="n">end</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">deactivate</span><span class="w"> </span><span class="n">App</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">protected</span><span class="w"> </span><span class="n">resource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">deactivate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">user</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">protected</span><span class="w"> </span><span class="n">resource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">else</span><span class="w"> </span><span class="kd">permission</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">granted</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">activate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">activate</span><span class="w"> </span><span class="n">App</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">authorization</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">WebBrowser</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">App</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">resource</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">available</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">deactivate</span><span class="w"> </span><span class="n">App</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">deactivate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">user</span><span class="w"> </span><span class="o">&lt;--</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">FB</span><span class="w"> </span><span class="n">resource</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">available</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">end</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">deactivate</span><span class="w"> </span><span class="n">WebBrowser</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">deactivate</span><span class="w"> </span><span class="n">user</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">@</span><span class="n">enduml</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Thanks for reading!!!
 :)</p>
