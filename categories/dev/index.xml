@@ -1,25 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>dev - Category - Sakthivel B</title>
+        <title>Dev - Category - Sakthivel B</title>
         <link>https://imshakthi.github.io/categories/dev/</link>
-        <description>dev - Category - Sakthivel B</description>
+        <description>Dev - Category - Sakthivel B</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 May 2020 12:51:23 &#43;0530</lastBuildDate><atom:link href="https://imshakthi.github.io/categories/dev/" rel="self" type="application/rss+xml" /><item>
     <title>Git - Validate commit message - git hooks</title>
     <link>https://imshakthi.github.io/posts/0002-git-hooks/</link>
     <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://imshakthi.github.io/posts/0002-git-hooks/</guid>
-    <description><![CDATA[To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using git-hooks, where the commit message is formatted with the help of commit-msg hook. commit-msg hook will be trigger on each commit.
-First go to git repo which needs the validator, then create commit-msg hook file in .git/hooks folder
-1 2 3 cd &lt;path-to-git-repo-to-install-commit-message-validator&gt; touch .git/hooks/commit-msg Modify permission to make the hook executable]]></description>
+    <description><![CDATA[<p>To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using <code>git-hooks</code>, where the commit message is formatted with the help of <code>commit-msg</code> hook. commit-msg hook will be trigger on each commit.</p>
+<p>First go to git repo which needs the validator, then create <code>commit-msg</code> hook file in <code>.git/hooks</code> folder</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">touch .git/hooks/commit-msg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Modify permission to make the hook executable</p>]]></description>
 </item><item>
     <title>Plantuml Is Awesome</title>
     <link>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</link>
     <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
     <author>Author</author>
     <guid>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</guid>
-    <description><![CDATA[This post is all about why I felt PlantUML is awesome.
-PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language.
-You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.]]></description>
+    <description><![CDATA[<p>This post is all about why I felt PlantUML is awesome.</p>
+<p><a href="https://github.com/plantuml/plantuml" target="_blank" rel="noopener noreffer">PlantUML</a> is an open-source tool allowing users to create UML diagrams from a plain text language.</p>
+<p>You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.</p>]]></description>
 </item></channel>
 </rss>
