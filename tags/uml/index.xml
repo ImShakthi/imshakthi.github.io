@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Uml - Tag - Sakthivel B</title>
-        <link>https://imshakthi.github.io/tags/uml/</link>
+        <link>http://localhost:1313/tags/uml/</link>
         <description>Uml - Tag - Sakthivel B</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</lastBuildDate><atom:link href="https://imshakthi.github.io/tags/uml/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/tags/uml/" rel="self" type="application/rss+xml" /><item>
     <title>Plantuml Is Awesome</title>
-    <link>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</link>
+    <link>http://localhost:1313/posts/0001-plantuml-is-awesome/</link>
     <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
     <author>Author</author>
-    <guid>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</guid>
+    <guid>http://localhost:1313/posts/0001-plantuml-is-awesome/</guid>
     <description><![CDATA[<p>This post is all about why I felt PlantUML is awesome.</p>
 <p><a href="https://github.com/plantuml/plantuml" target="_blank" rel="noopener noreffer">PlantUML</a> is an open-source tool allowing users to create UML diagrams from a plain text language.</p>
 <p>You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.</p>]]></description>
