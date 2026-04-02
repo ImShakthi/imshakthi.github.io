@@ -1,42 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - Sakthivel B</title>
-        <link>http://localhost:1313/tags/</link>
-        <description>Tags - Tag - Sakthivel B</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 May 2020 12:51:23 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Git</title>
-    <link>http://localhost:1313/tags/git/</link>
-    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/git/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Githooks</title>
-    <link>http://localhost:1313/tags/githooks/</link>
-    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/githooks/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Tricks</title>
-    <link>http://localhost:1313/tags/tricks/</link>
-    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/tricks/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Devtools</title>
-    <link>http://localhost:1313/tags/devtools/</link>
-    <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/devtools/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Uml</title>
-    <link>http://localhost:1313/tags/uml/</link>
-    <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/tags/uml/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sakthivel B</title>
+    <link>https://imshakthi.github.io/tags/</link>
+    <description>Recent content in Tags on Sakthivel B</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 May 2020 12:51:23 +0530</lastBuildDate>
+    <atom:link href="https://imshakthi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://imshakthi.github.io/tags/git/</link>
+      <pubDate>Thu, 14 May 2020 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Githooks</title>
+      <link>https://imshakthi.github.io/tags/githooks/</link>
+      <pubDate>Thu, 14 May 2020 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/tags/githooks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tricks</title>
+      <link>https://imshakthi.github.io/tags/tricks/</link>
+      <pubDate>Thu, 14 May 2020 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/tags/tricks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devtools</title>
+      <link>https://imshakthi.github.io/tags/devtools/</link>
+      <pubDate>Sat, 03 Aug 2019 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/tags/devtools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uml</title>
+      <link>https://imshakthi.github.io/tags/uml/</link>
+      <pubDate>Sat, 03 Aug 2019 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/tags/uml/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

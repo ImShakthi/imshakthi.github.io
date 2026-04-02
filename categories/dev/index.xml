@@ -1,37 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Dev - Category - Sakthivel B</title>
-        <link>http://localhost:1313/categories/dev/</link>
-        <description>Dev - Category - Sakthivel B</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 May 2020 12:51:23 &#43;0530</lastBuildDate><atom:link href="http://localhost:1313/categories/dev/" rel="self" type="application/rss+xml" /><item>
-    <title>Git - Validate commit message - git hooks</title>
-    <link>http://localhost:1313/posts/0002-git-hooks/</link>
-    <pubDate>Thu, 14 May 2020 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/0002-git-hooks/</guid>
-    <description><![CDATA[<p>To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using <code>git-hooks</code>, where the commit message is formatted with the help of <code>commit-msg</code> hook. commit-msg hook will be trigger on each commit.</p>
-<p>First go to git repo which needs the validator, then create <code>commit-msg</code> hook file in <code>.git/hooks</code> folder</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;path-to-git-repo-to-install-commit-message-validator&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">touch .git/hooks/commit-msg
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Modify permission to make the hook executable</p>]]></description>
-</item><item>
-    <title>Plantuml Is Awesome</title>
-    <link>http://localhost:1313/posts/0001-plantuml-is-awesome/</link>
-    <pubDate>Sat, 03 Aug 2019 12:51:23 &#43;0530</pubDate>
-    <author>Author</author>
-    <guid>http://localhost:1313/posts/0001-plantuml-is-awesome/</guid>
-    <description><![CDATA[<p>This post is all about why I felt PlantUML is awesome.</p>
-<p><a href="https://github.com/plantuml/plantuml" target="_blank" rel="noopener noreffer">PlantUML</a> is an open-source tool allowing users to create UML diagrams from a plain text language.</p>
-<p>You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.</p>]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on Sakthivel B</title>
+    <link>https://imshakthi.github.io/categories/dev/</link>
+    <description>Recent content in Dev on Sakthivel B</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 May 2020 12:51:23 +0530</lastBuildDate>
+    <atom:link href="https://imshakthi.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git - Validate commit message - git hooks</title>
+      <link>https://imshakthi.github.io/posts/0002-git-hooks/</link>
+      <pubDate>Thu, 14 May 2020 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/posts/0002-git-hooks/</guid>
+      <description>&lt;p&gt;To enforce commit messages in git repo to follow specific format or pattern. This can be achieve by using &lt;code&gt;git-hooks&lt;/code&gt;, where the commit message is formatted with the help of &lt;code&gt;commit-msg&lt;/code&gt; hook. commit-msg hook will be trigger on each commit.&lt;/p&gt;&#xA;&lt;p&gt;First go to git repo which needs the validator, then create &lt;code&gt;commit-msg&lt;/code&gt; hook file in &lt;code&gt;.git/hooks&lt;/code&gt; folder&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; &amp;lt;path-to-git-repo-to-install-commit-message-validator&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;touch .git/hooks/commit-msg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;Modify permission to make the hook executable&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plantuml Is Awesome</title>
+      <link>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</link>
+      <pubDate>Sat, 03 Aug 2019 12:51:23 +0530</pubDate>
+      <guid>https://imshakthi.github.io/posts/0001-plantuml-is-awesome/</guid>
+      <description>&lt;p&gt;This post is all about why I felt PlantUML is awesome.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/plantuml/plantuml&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PlantUML&lt;/a&gt; is an open-source tool allowing users to create UML diagrams from a plain text language.&lt;/p&gt;&#xA;&lt;p&gt;You can just write few lines of code to draw your UML diagram. UML diagrams are very important in communicating design implementation, doing these digrams in draw.io or something drawing tool is a time taking task. Playing with touchpad/mouse for long time is less effective.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
